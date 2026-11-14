@@ -1,0 +1,38 @@
+{
+  "body": {
+    "counts": {
+      "tasks": {
+        "backlog": 0,
+        "cancelled": 0,
+        "done": 0,
+        "in_progress": 0,
+        "in_review": 0,
+        "ready": 0
+      }
+    },
+    "created_at": 1794616672,
+    "deleted_at": null,
+    "id": "aaf21cea-5cbb-47b4-a60d-d72909e8c427",
+    "name": "Release",
+    "outcome": null,
+    "product_id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249",
+    "status": "proposed",
+    "target_date": null,
+    "transitions": [],
+    "updated_at": null,
+    "user_id": null
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "json": {
+      "name": "Release",
+      "product_id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249"
+    },
+    "method": "POST",
+    "path": "/company/projects"
+  },
+  "status": 201
+}

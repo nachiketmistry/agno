@@ -1,0 +1,30 @@
+{
+  "name": "agentworker",
+  "private": true,
+  "packageManager": "bun@1.4.4",
+  "workspaces": ["packages/*", "apps/*", "tests"],
+  "scripts": {
+    "dev": "bun run --cwd apps/local dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "turbo run test --continue",
+    "test:unit": "turbo run test:unit --continue",
+    "test:conformance": "bun run --cwd tests test:conformance",
+    "test:behavior": "bun run --cwd tests test:behavior",
+    "status": "bun run --cwd tests status",
+    "contract:export": "bun run --cwd packages/contract export",
+    "contract:types": "bun run --cwd packages/contract types",
+    "reference:keys": "bun run tests/support/generate-keys.ts",
+    "reference:serve": "bun run --cwd packages/contract reference",
+    "coverage": "bun run --cwd tests coverage",
+    "contract:probes": "bun run tests/support/record-probes.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.2.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "body": {
+    "detail": "Agent not found"
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/agents/missing"
+  },
+  "status": 404
+}

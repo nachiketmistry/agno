@@ -1,0 +1,21 @@
+{
+  "name": "@agentworker/tests",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "bun test",
+    "test:conformance": "bun test conformance",
+    "test:behavior": "bun test behavior",
+    "status": "bun run support/status.ts",
+    "coverage": "bun run support/coverage.ts"
+  },
+  "dependencies": {
+    "@agentworker/contract": "workspace:*",
+    "@agentworker/core": "workspace:*",
+    "@agentworker/server": "workspace:*",
+    "ajv": "^8.17.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

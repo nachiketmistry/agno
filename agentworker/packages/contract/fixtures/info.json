@@ -1,0 +1,28 @@
+{
+  "body": {
+    "agent_count": 2,
+    "agno_version": "3.2.0",
+    "auth_mode": "none",
+    "mcp": {
+      "enabled": false,
+      "oauth": null,
+      "path": null,
+      "tool_run_endpoint": false
+    },
+    "name": "Reference OS",
+    "os_id": "reference-os",
+    "os_version": "1.0.0",
+    "team_count": 1,
+    "user_isolation": false,
+    "workflow_count": 1
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/info"
+  },
+  "status": 200
+}

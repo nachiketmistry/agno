@@ -1,0 +1,12 @@
+{
+  "name": "@agentworker/local",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "start": "bun src/main.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": { "@agentworker/server": "workspace:*" }
+}

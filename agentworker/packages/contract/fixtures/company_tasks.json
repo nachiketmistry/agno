@@ -1,0 +1,85 @@
+{
+  "body": {
+    "data": [
+      {
+        "accepted_at": null,
+        "accepted_by": null,
+        "allowed_transitions": [
+          {
+            "allowed": true,
+            "reason": null,
+            "starts_run": false,
+            "target": "ready"
+          },
+          {
+            "allowed": true,
+            "reason": null,
+            "starts_run": true,
+            "target": "in_progress"
+          },
+          {
+            "allowed": false,
+            "reason": "Review requires a previous Task attempt",
+            "starts_run": false,
+            "target": "in_review"
+          },
+          {
+            "allowed": false,
+            "reason": "Completion requires a previous Task attempt",
+            "starts_run": false,
+            "target": "done"
+          },
+          {
+            "allowed": true,
+            "reason": null,
+            "starts_run": false,
+            "target": "cancelled"
+          }
+        ],
+        "brief": "Summarize reviewed changes",
+        "created_at": 1794616672,
+        "dedupe_key": null,
+        "deleted_at": null,
+        "evidence": [
+          {
+            "reference": "Reviewed release changes"
+          }
+        ],
+        "executor_id": null,
+        "executor_type": null,
+        "id": "57fdafb8-909c-4089-a2ef-23a6bb53efec",
+        "job_id": null,
+        "last_run": null,
+        "metadata": null,
+        "origin": "human",
+        "product_id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249",
+        "project_id": "aaf21cea-5cbb-47b4-a60d-d72909e8c427",
+        "result": null,
+        "routine_id": null,
+        "sandboxed": false,
+        "session_id": "0cf73861-8f24-492b-99af-8acde316f335",
+        "status": "backlog",
+        "title": "Draft release notes",
+        "transitions": [],
+        "updated_at": null,
+        "user_id": null
+      }
+    ],
+    "meta": {
+      "limit": 20,
+      "page": 1,
+      "search_time_ms": 0.0,
+      "total_count": 1,
+      "total_pages": 1
+    }
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/company/tasks"
+  },
+  "status": 200
+}

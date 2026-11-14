@@ -1,0 +1,11 @@
+{
+  "body": "",
+  "headers": {
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "DELETE",
+    "path": "/company/products/922fc3d5-a4ee-4d0a-a5f9-aadb013aa249"
+  },
+  "status": 204
+}

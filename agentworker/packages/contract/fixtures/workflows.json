@@ -1,0 +1,21 @@
+{
+  "body": [
+    {
+      "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+      "id": "echo-flow",
+      "is_component": false,
+      "is_factory": false,
+      "name": "Echo flow",
+      "sandboxed": false
+    }
+  ],
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/workflows"
+  },
+  "status": 200
+}

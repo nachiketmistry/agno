@@ -1,0 +1,15 @@
+{
+  "body": {
+    "instantiated_at": "2026-11-14T00:37:50.543753Z",
+    "status": "ok"
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/health"
+  },
+  "status": 200
+}

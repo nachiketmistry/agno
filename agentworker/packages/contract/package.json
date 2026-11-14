@@ -1,0 +1,23 @@
+{
+  "name": "@agentworker/contract",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./openapi.json": "./openapi.json",
+    "./scope-mappings.json": "./scope-mappings.json",
+    "./fixtures/*": "./fixtures/*"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "export": "${PYTHON:-python3} ../../reference/python/export_contract.py",
+    "reference": "${PYTHON:-python3} ../../reference/python/reference_os.py",
+    "types": "openapi-typescript openapi.json -o src/generated.ts",
+    "test": "bun test",
+    "test:unit": "bun test"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.6.0"
+  }
+}

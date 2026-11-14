@@ -1,0 +1,164 @@
+{
+  "body": {
+    "agents": [
+      {
+        "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+        "description": "Reference agent",
+        "id": "assistant",
+        "model": {
+          "id": "gpt-5.6-luna",
+          "provider": "OpenAI"
+        },
+        "name": "Assistant",
+        "sandboxed": false
+      }
+    ],
+    "available_models": [
+      {
+        "id": "gpt-5.6-luna",
+        "provider": "OpenAI"
+      }
+    ],
+    "company": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          },
+          "tables": [
+            "agno_company_products",
+            "agno_company_projects",
+            "agno_company_tasks",
+            "agno_company_sources"
+          ]
+        }
+      ]
+    },
+    "databases": [
+      "2b9d8484-a52f-52f2-a030-a076210333b2"
+    ],
+    "description": "Reference AgentOS for the AgentWorker contract",
+    "evals": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          },
+          "tables": [
+            "agno_eval_runs"
+          ]
+        }
+      ]
+    },
+    "filesystem": {
+      "namespaces": []
+    },
+    "interfaces": [],
+    "knowledge": {
+      "dbs": [],
+      "knowledge_instances": []
+    },
+    "learning": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          },
+          "tables": [
+            "agno_learnings"
+          ]
+        }
+      ]
+    },
+    "memory": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          },
+          "tables": [
+            "agno_memories"
+          ]
+        }
+      ]
+    },
+    "metrics": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          },
+          "tables": [
+            "agno_component_metrics"
+          ]
+        }
+      ]
+    },
+    "os_database": "2b9d8484-a52f-52f2-a030-a076210333b2",
+    "os_id": "reference-os",
+    "queue": {
+      "durable": false,
+      "queue_per_session": false
+    },
+    "session": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          },
+          "tables": [
+            "agno_sessions"
+          ]
+        }
+      ]
+    },
+    "teams": [
+      {
+        "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+        "id": "crew",
+        "mode": "coordinate",
+        "model": {
+          "id": "gpt-5.6-luna",
+          "provider": "OpenAI"
+        },
+        "name": "Crew",
+        "sandboxed": false
+      }
+    ],
+    "traces": {
+      "dbs": [
+        {
+          "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+          "domain_config": {
+            "display_name": "2b9d8484-a52f-52f2-a030-a076210333b2"
+          }
+        }
+      ]
+    },
+    "workflows": [
+      {
+        "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+        "id": "echo-flow",
+        "is_component": false,
+        "is_factory": false,
+        "name": "Echo flow",
+        "sandboxed": false
+      }
+    ]
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/config"
+  },
+  "status": 200
+}

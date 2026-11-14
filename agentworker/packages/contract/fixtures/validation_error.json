@@ -1,0 +1,25 @@
+{
+  "body": {
+    "detail": [
+      {
+        "input": {},
+        "loc": [
+          "body",
+          "name"
+        ],
+        "msg": "Field required",
+        "type": "missing"
+      }
+    ]
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "json": {},
+    "method": "POST",
+    "path": "/company/products"
+  },
+  "status": 422
+}

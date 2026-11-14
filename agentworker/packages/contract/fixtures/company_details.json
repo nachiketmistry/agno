@@ -1,0 +1,18 @@
+{
+  "body": {
+    "created_at": 1794616672,
+    "description": null,
+    "id": "company",
+    "name": "Company",
+    "updated_at": 1794616672
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/company/details"
+  },
+  "status": 200
+}

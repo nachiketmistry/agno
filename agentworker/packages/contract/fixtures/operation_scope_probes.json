@@ -1,0 +1,975 @@
+{
+  "GET /agents": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:read",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:read",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:read",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:run",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs/{run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:read",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs/{run_id}/cancel": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:run",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs/{run_id}/checkpoints": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:read",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs/{run_id}/checkpoints/{message_index}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:read",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs/{run_id}/continue": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agents:run",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs/{run_id}/resume": {
+    "status": 403,
+    "detail": "Access denied to run this agent",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/sessions/{session_id}/compact": {
+    "status": 403,
+    "detail": "Access denied to run this agent",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/sessions/{session_id}/fork": {
+    "status": 403,
+    "detail": "Access denied to run this agent",
+    "contentType": "application/json"
+  },
+  "GET /approvals": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): approvals:read",
+    "contentType": "application/json"
+  },
+  "DELETE /approvals/{approval_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): approvals:delete",
+    "contentType": "application/json"
+  },
+  "GET /approvals/{approval_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): approvals:read",
+    "contentType": "application/json"
+  },
+  "POST /approvals/{approval_id}/resolve": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): approvals:write",
+    "contentType": "application/json"
+  },
+  "GET /approvals/{approval_id}/status": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): approvals:read",
+    "contentType": "application/json"
+  },
+  "GET /approvals/count": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): approvals:read",
+    "contentType": "application/json"
+  },
+  "GET /company/attention": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:read",
+    "contentType": "application/json"
+  },
+  "GET /company/decisions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): decisions:read",
+    "contentType": "application/json"
+  },
+  "POST /company/decisions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): decisions:write",
+    "contentType": "application/json"
+  },
+  "GET /company/details": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): company:read",
+    "contentType": "application/json"
+  },
+  "PATCH /company/details": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): company:write",
+    "contentType": "application/json"
+  },
+  "GET /company/details/access": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): company:read",
+    "contentType": "application/json"
+  },
+  "GET /company/products": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:read",
+    "contentType": "application/json"
+  },
+  "POST /company/products": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:write",
+    "contentType": "application/json"
+  },
+  "DELETE /company/products/{product_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:delete",
+    "contentType": "application/json"
+  },
+  "GET /company/products/{product_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:read",
+    "contentType": "application/json"
+  },
+  "PATCH /company/products/{product_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:write",
+    "contentType": "application/json"
+  },
+  "POST /company/products/{product_id}/restore": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:delete",
+    "contentType": "application/json"
+  },
+  "GET /company/products/{product_id}/wiki": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): wiki:read",
+    "contentType": "application/json"
+  },
+  "GET /company/products/{product_id}/wiki/{path}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): wiki:read",
+    "contentType": "application/json"
+  },
+  "PUT /company/products/{product_id}/wiki/{path}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): wiki:write",
+    "contentType": "application/json"
+  },
+  "GET /company/projects": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:read",
+    "contentType": "application/json"
+  },
+  "POST /company/projects": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:write",
+    "contentType": "application/json"
+  },
+  "DELETE /company/projects/{project_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:delete",
+    "contentType": "application/json"
+  },
+  "GET /company/projects/{project_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:read",
+    "contentType": "application/json"
+  },
+  "PATCH /company/projects/{project_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:write",
+    "contentType": "application/json"
+  },
+  "POST /company/projects/{project_id}/restore": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:delete",
+    "contentType": "application/json"
+  },
+  "POST /company/projects/{project_id}/transitions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): projects:write",
+    "contentType": "application/json"
+  },
+  "GET /company/routines": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:read",
+    "contentType": "application/json"
+  },
+  "POST /company/routines": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:write, schedules:write",
+    "contentType": "application/json"
+  },
+  "DELETE /company/routines/{routine_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): agent_os:admin",
+    "contentType": "application/json"
+  },
+  "GET /company/routines/{routine_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:read",
+    "contentType": "application/json"
+  },
+  "PATCH /company/routines/{routine_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:write, schedules:write",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/archive": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:delete, schedules:delete",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/cancel": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:write, schedules:write",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/pause": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:write, schedules:write",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/restore": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:delete, schedules:delete",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/resume": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:write, schedules:write",
+    "contentType": "application/json"
+  },
+  "GET /company/routines/{routine_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:read, schedules:read",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/trigger": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): routines:write, schedules:write",
+    "contentType": "application/json"
+  },
+  "GET /company/runs/{run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:read",
+    "contentType": "application/json"
+  },
+  "POST /company/runs/{run_id}/cancel": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:write",
+    "contentType": "application/json"
+  },
+  "POST /company/setup": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): products:write",
+    "contentType": "application/json"
+  },
+  "GET /company/sources": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sources:read",
+    "contentType": "application/json"
+  },
+  "POST /company/sources": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sources:write",
+    "contentType": "application/json"
+  },
+  "DELETE /company/sources/{source_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sources:delete",
+    "contentType": "application/json"
+  },
+  "POST /company/sources/{source_id}/restore": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sources:delete",
+    "contentType": "application/json"
+  },
+  "GET /company/tasks": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:read",
+    "contentType": "application/json"
+  },
+  "POST /company/tasks": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:write",
+    "contentType": "application/json"
+  },
+  "DELETE /company/tasks/{task_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:delete",
+    "contentType": "application/json"
+  },
+  "GET /company/tasks/{task_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:read",
+    "contentType": "application/json"
+  },
+  "PATCH /company/tasks/{task_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:write",
+    "contentType": "application/json"
+  },
+  "POST /company/tasks/{task_id}/restore": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:delete",
+    "contentType": "application/json"
+  },
+  "GET /company/tasks/{task_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:read",
+    "contentType": "application/json"
+  },
+  "POST /company/tasks/{task_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:write, wiki:read",
+    "contentType": "application/json"
+  },
+  "POST /company/tasks/{task_id}/transitions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): tasks:write",
+    "contentType": "application/json"
+  },
+  "GET /company/wiki": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): wiki:read",
+    "contentType": "application/json"
+  },
+  "GET /company/wiki/{path}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): wiki:read",
+    "contentType": "application/json"
+  },
+  "PUT /company/wiki/{path}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): wiki:write",
+    "contentType": "application/json"
+  },
+  "GET /components": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:read",
+    "contentType": "application/json"
+  },
+  "POST /components": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:write",
+    "contentType": "application/json"
+  },
+  "DELETE /components/{component_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:delete",
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:read",
+    "contentType": "application/json"
+  },
+  "PATCH /components/{component_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:write",
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}/configs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:read",
+    "contentType": "application/json"
+  },
+  "POST /components/{component_id}/configs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:write",
+    "contentType": "application/json"
+  },
+  "DELETE /components/{component_id}/configs/{version}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:delete",
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}/configs/{version}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:read",
+    "contentType": "application/json"
+  },
+  "PATCH /components/{component_id}/configs/{version}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:write",
+    "contentType": "application/json"
+  },
+  "POST /components/{component_id}/configs/{version}/set-current": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:write",
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}/configs/current": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:read",
+    "contentType": "application/json"
+  },
+  "POST /components/{component_id}/restore": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): components:delete",
+    "contentType": "application/json"
+  },
+  "GET /config": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): config:read",
+    "contentType": "application/json"
+  },
+  "POST /databases/{db_id}/migrate": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): config:write",
+    "contentType": "application/json"
+  },
+  "POST /databases/all/migrate": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): config:write",
+    "contentType": "application/json"
+  },
+  "DELETE /eval-runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): evals:delete",
+    "contentType": "application/json"
+  },
+  "GET /eval-runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): evals:read",
+    "contentType": "application/json"
+  },
+  "POST /eval-runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): evals:write",
+    "contentType": "application/json"
+  },
+  "GET /eval-runs/{eval_run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): evals:read",
+    "contentType": "application/json"
+  },
+  "PATCH /eval-runs/{eval_run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): evals:write",
+    "contentType": "application/json"
+  },
+  "GET /filesystem/content": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): filesystem:read",
+    "contentType": "application/json"
+  },
+  "GET /filesystem/entries": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): filesystem:read",
+    "contentType": "application/json"
+  },
+  "GET /filesystem/files": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): filesystem:read",
+    "contentType": "application/json"
+  },
+  "GET /filesystem/search": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): filesystem:read",
+    "contentType": "application/json"
+  },
+  "GET /health": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /info": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /knowledge/{knowledge_id}/sources": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/{knowledge_id}/sources/{source_id}/files": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/config": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "DELETE /knowledge/content": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:delete",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/content": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/content": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:write",
+    "contentType": "application/json"
+  },
+  "DELETE /knowledge/content/{content_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:delete",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/content/{content_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "PATCH /knowledge/content/{content_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:write",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/content/{content_id}/refresh": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:write",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/content/{content_id}/status": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/remote-content": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:write",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/search": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): knowledge:read",
+    "contentType": "application/json"
+  },
+  "GET /learnings": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:read",
+    "contentType": "application/json"
+  },
+  "POST /learnings": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:write",
+    "contentType": "application/json"
+  },
+  "DELETE /learnings/{learning_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:delete",
+    "contentType": "application/json"
+  },
+  "GET /learnings/{learning_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:read",
+    "contentType": "application/json"
+  },
+  "PATCH /learnings/{learning_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:write",
+    "contentType": "application/json"
+  },
+  "GET /learnings/users": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:read",
+    "contentType": "application/json"
+  },
+  "DELETE /learnings/users/{user_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): learnings:delete",
+    "contentType": "application/json"
+  },
+  "DELETE /memories": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:delete",
+    "contentType": "application/json"
+  },
+  "GET /memories": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:read",
+    "contentType": "application/json"
+  },
+  "POST /memories": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:write",
+    "contentType": "application/json"
+  },
+  "DELETE /memories/{memory_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:delete",
+    "contentType": "application/json"
+  },
+  "GET /memories/{memory_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:read",
+    "contentType": "application/json"
+  },
+  "PATCH /memories/{memory_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:write",
+    "contentType": "application/json"
+  },
+  "GET /memory_topics": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:read",
+    "contentType": "application/json"
+  },
+  "GET /metrics": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "POST /metrics/refresh": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:write",
+    "contentType": "application/json"
+  },
+  "GET /metrics/refresh/status": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "POST /optimize-memories": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:write",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/latency": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/models": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "POST /os/metrics/refresh": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:write",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/refresh/status": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/sessions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/tokens": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/users": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): metrics:read",
+    "contentType": "application/json"
+  },
+  "DELETE /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "GET /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "PATCH /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "POST /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "PUT /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "GET /registry": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): registry:read",
+    "contentType": "application/json"
+  },
+  "GET /schedules": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:read",
+    "contentType": "application/json"
+  },
+  "POST /schedules": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:write",
+    "contentType": "application/json"
+  },
+  "DELETE /schedules/{schedule_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:delete",
+    "contentType": "application/json"
+  },
+  "GET /schedules/{schedule_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:read",
+    "contentType": "application/json"
+  },
+  "PATCH /schedules/{schedule_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:write",
+    "contentType": "application/json"
+  },
+  "POST /schedules/{schedule_id}/disable": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:write",
+    "contentType": "application/json"
+  },
+  "POST /schedules/{schedule_id}/enable": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:write",
+    "contentType": "application/json"
+  },
+  "GET /schedules/{schedule_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:read",
+    "contentType": "application/json"
+  },
+  "GET /schedules/{schedule_id}/runs/{run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:read",
+    "contentType": "application/json"
+  },
+  "POST /schedules/{schedule_id}/trigger": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): schedules:write",
+    "contentType": "application/json"
+  },
+  "GET /service-accounts": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): service_accounts:read",
+    "contentType": "application/json"
+  },
+  "POST /service-accounts": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): service_accounts:write",
+    "contentType": "application/json"
+  },
+  "DELETE /service-accounts/{service_account_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): service_accounts:delete",
+    "contentType": "application/json"
+  },
+  "DELETE /sessions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:delete",
+    "contentType": "application/json"
+  },
+  "GET /sessions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "POST /sessions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:write",
+    "contentType": "application/json"
+  },
+  "DELETE /sessions/{session_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:delete",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "PATCH /sessions/{session_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:write",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/compactions": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/media/{storage_key}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "POST /sessions/{session_id}/rename": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:write",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/run-previews": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/runs/{run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "GET /sessions/filter-schema": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "POST /sessions/search": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): sessions:read",
+    "contentType": "application/json"
+  },
+  "GET /teams": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:read",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:read",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:read",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:run",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs/{run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:read",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs/{run_id}/cancel": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:run",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs/{run_id}/checkpoints": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:read",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs/{run_id}/checkpoints/{message_index}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:read",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs/{run_id}/continue": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): teams:run",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs/{run_id}/resume": {
+    "status": 403,
+    "detail": "Access denied to run this team",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/sessions/{session_id}/fork": {
+    "status": 403,
+    "detail": "Access denied to run this team",
+    "contentType": "application/json"
+  },
+  "GET /trace_session_stats": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): traces:read",
+    "contentType": "application/json"
+  },
+  "GET /traces": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): traces:read",
+    "contentType": "application/json"
+  },
+  "GET /traces/{trace_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): traces:read",
+    "contentType": "application/json"
+  },
+  "GET /traces/filter-schema": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): traces:read",
+    "contentType": "application/json"
+  },
+  "POST /traces/search": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): traces:read",
+    "contentType": "application/json"
+  },
+  "GET /user_memory_stats": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): memories:read",
+    "contentType": "application/json"
+  },
+  "GET /workflows": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:read",
+    "contentType": "application/json"
+  },
+  "GET /workflows/{workflow_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:read",
+    "contentType": "application/json"
+  },
+  "GET /workflows/{workflow_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:read",
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:run",
+    "contentType": "application/json"
+  },
+  "GET /workflows/{workflow_id}/runs/{run_id}": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:read",
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs/{run_id}/cancel": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:run",
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs/{run_id}/continue": {
+    "status": 403,
+    "detail": "Insufficient permissions. Required scope(s): workflows:run",
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs/{run_id}/resume": {
+    "status": 403,
+    "detail": "Access denied to run this workflow",
+    "contentType": "application/json"
+  }
+}

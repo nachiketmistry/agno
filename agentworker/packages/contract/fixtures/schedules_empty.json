@@ -1,0 +1,44 @@
+{
+  "body": {
+    "data": [
+      {
+        "created_at": 1794616672,
+        "cron_expr": "0 * * * *",
+        "description": null,
+        "disabled_reason": null,
+        "enabled": true,
+        "endpoint": "/company/attention",
+        "id": "agno-company-automation",
+        "managed_by": "company",
+        "max_retries": 0,
+        "method": "GET",
+        "name": "Company automation",
+        "next_run_at": 1794618000,
+        "payload": null,
+        "retry_delay_seconds": 60,
+        "target_id": null,
+        "target_type": null,
+        "timeout_seconds": 3600,
+        "timezone": "UTC",
+        "updated_at": 1794616672,
+        "user_id": null
+      }
+    ],
+    "meta": {
+      "limit": 100,
+      "page": 1,
+      "search_time_ms": 0.0,
+      "total_count": 1,
+      "total_pages": 1
+    }
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/schedules"
+  },
+  "status": 200
+}

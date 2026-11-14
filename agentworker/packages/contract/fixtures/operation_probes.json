@@ -1,0 +1,870 @@
+{
+  "GET /agents": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}": {
+    "status": 404,
+    "detail": "Agent not found",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs/{run_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs/{run_id}/cancel": {
+    "status": 404,
+    "detail": "Agent not found",
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs/{run_id}/checkpoints": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /agents/{agent_id}/runs/{run_id}/checkpoints/{message_index}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs/{run_id}/continue": {
+    "status": 404,
+    "detail": "Agent not found",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/runs/{run_id}/resume": {
+    "status": 404,
+    "detail": "Agent not found",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/sessions/{session_id}/compact": {
+    "status": 404,
+    "detail": "Agent not found",
+    "contentType": "application/json"
+  },
+  "POST /agents/{agent_id}/sessions/{session_id}/fork": {
+    "status": 404,
+    "detail": "Agent not found",
+    "contentType": "application/json"
+  },
+  "GET /approvals": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "DELETE /approvals/{approval_id}": {
+    "status": 500,
+    "detail": "Failed to delete approval",
+    "contentType": "application/json"
+  },
+  "GET /approvals/{approval_id}": {
+    "status": 404,
+    "detail": "Approval not found",
+    "contentType": "application/json"
+  },
+  "POST /approvals/{approval_id}/resolve": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /approvals/{approval_id}/status": {
+    "status": 404,
+    "detail": "Approval not found",
+    "contentType": "application/json"
+  },
+  "GET /approvals/count": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /company/attention": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /company/decisions": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /company/decisions": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /company/details": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "PATCH /company/details": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /company/details/access": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /company/products": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /company/products": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /company/products/{product_id}": {
+    "status": 404,
+    "detail": "Product not found",
+    "contentType": "application/json"
+  },
+  "GET /company/products/{product_id}": {
+    "status": 404,
+    "detail": "Product not found",
+    "contentType": "application/json"
+  },
+  "PATCH /company/products/{product_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /company/products/{product_id}/restore": {
+    "status": 404,
+    "detail": "Product not found",
+    "contentType": "application/json"
+  },
+  "GET /company/products/{product_id}/wiki": {
+    "status": 404,
+    "detail": "Product not found",
+    "contentType": "application/json"
+  },
+  "GET /company/products/{product_id}/wiki/{path}": {
+    "status": 404,
+    "detail": "Product not found",
+    "contentType": "application/json"
+  },
+  "PUT /company/products/{product_id}/wiki/{path}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /company/projects": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /company/projects": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /company/projects/{project_id}": {
+    "status": 404,
+    "detail": "Project not found",
+    "contentType": "application/json"
+  },
+  "GET /company/projects/{project_id}": {
+    "status": 404,
+    "detail": "Project not found",
+    "contentType": "application/json"
+  },
+  "PATCH /company/projects/{project_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /company/projects/{project_id}/restore": {
+    "status": 404,
+    "detail": "Project not found",
+    "contentType": "application/json"
+  },
+  "POST /company/projects/{project_id}/transitions": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /company/routines": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /company/routines": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /company/routines/{routine_id}": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /company/routines/{routine_id}": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "PATCH /company/routines/{routine_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/archive": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/cancel": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/pause": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/restore": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/resume": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /company/routines/{routine_id}/runs": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "POST /company/routines/{routine_id}/trigger": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /company/runs/{run_id}": {
+    "status": 404,
+    "detail": "Company run not found",
+    "contentType": "application/json"
+  },
+  "POST /company/runs/{run_id}/cancel": {
+    "status": 404,
+    "detail": "Company run not found",
+    "contentType": "application/json"
+  },
+  "POST /company/setup": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /company/sources": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /company/sources": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /company/sources/{source_id}": {
+    "status": 404,
+    "detail": "Source not found",
+    "contentType": "application/json"
+  },
+  "POST /company/sources/{source_id}/restore": {
+    "status": 404,
+    "detail": "Source not found",
+    "contentType": "application/json"
+  },
+  "GET /company/tasks": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /company/tasks": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /company/tasks/{task_id}": {
+    "status": 404,
+    "detail": "Task not found",
+    "contentType": "application/json"
+  },
+  "GET /company/tasks/{task_id}": {
+    "status": 404,
+    "detail": "Task not found",
+    "contentType": "application/json"
+  },
+  "PATCH /company/tasks/{task_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /company/tasks/{task_id}/restore": {
+    "status": 404,
+    "detail": "Task not found",
+    "contentType": "application/json"
+  },
+  "GET /company/tasks/{task_id}/runs": {
+    "status": 404,
+    "detail": "Task not found",
+    "contentType": "application/json"
+  },
+  "POST /company/tasks/{task_id}/runs": {
+    "status": 404,
+    "detail": "Task not found",
+    "contentType": "application/json"
+  },
+  "POST /company/tasks/{task_id}/transitions": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /company/wiki": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /company/wiki/{path}": {
+    "status": 422,
+    "detail": "Wiki paths must be normalized relative Markdown paths",
+    "contentType": "application/json"
+  },
+  "PUT /company/wiki/{path}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /components": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /components": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /components/{component_id}": {
+    "status": 404,
+    "detail": "Component __missing__ not found",
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}": {
+    "status": 404,
+    "detail": "Component __missing__ not found",
+    "contentType": "application/json"
+  },
+  "PATCH /components/{component_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}/configs": {
+    "status": 404,
+    "detail": "Component __missing__ not found",
+    "contentType": "application/json"
+  },
+  "POST /components/{component_id}/configs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /components/{component_id}/configs/{version}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}/configs/{version}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "PATCH /components/{component_id}/configs/{version}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /components/{component_id}/configs/{version}/set-current": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /components/{component_id}/configs/current": {
+    "status": 404,
+    "detail": "Component __missing__ not found",
+    "contentType": "application/json"
+  },
+  "POST /components/{component_id}/restore": {
+    "status": 404,
+    "detail": "Component __missing__ not found",
+    "contentType": "application/json"
+  },
+  "GET /config": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /databases/{db_id}/migrate": {
+    "status": 404,
+    "detail": "No database found with id '__missing__'",
+    "contentType": "application/json"
+  },
+  "POST /databases/all/migrate": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "DELETE /eval-runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /eval-runs": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /eval-runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /eval-runs/{eval_run_id}": {
+    "status": 404,
+    "detail": "Eval run with id '__missing__' not found",
+    "contentType": "application/json"
+  },
+  "PATCH /eval-runs/{eval_run_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /filesystem/content": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /filesystem/entries": {
+    "status": 400,
+    "detail": "Provide a namespace, an agent_id, or both",
+    "contentType": "application/json"
+  },
+  "GET /filesystem/files": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /filesystem/search": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /health": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /info": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /knowledge/{knowledge_id}/sources": {
+    "status": 404,
+    "detail": "Knowledge base '__missing__' not found",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/{knowledge_id}/sources/{source_id}/files": {
+    "status": 404,
+    "detail": "Knowledge base '__missing__' not found",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/config": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "DELETE /knowledge/content": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/content": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/content": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "DELETE /knowledge/content/{content_id}": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/content/{content_id}": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "PATCH /knowledge/content/{content_id}": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/content/{content_id}/refresh": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "GET /knowledge/content/{content_id}/status": {
+    "status": 503,
+    "detail": "No knowledge base is available on this AgentOS. A Knowledge is served over /knowledge only once it has a contents_db: pass Knowledge(..., contents_db=<db>) to AgentOS(knowledge=[...]), or to an agent or team.",
+    "contentType": "application/json"
+  },
+  "POST /knowledge/remote-content": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /knowledge/search": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /learnings": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /learnings": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /learnings/{learning_id}": {
+    "status": 404,
+    "detail": "Learning not found",
+    "contentType": "application/json"
+  },
+  "GET /learnings/{learning_id}": {
+    "status": 404,
+    "detail": "Learning not found",
+    "contentType": "application/json"
+  },
+  "PATCH /learnings/{learning_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /learnings/users": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "DELETE /learnings/users/{user_id}": {
+    "status": 204,
+    "contentType": "application/json"
+  },
+  "DELETE /memories": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /memories": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /memories": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /memories/{memory_id}": {
+    "status": 204,
+    "contentType": "application/json"
+  },
+  "GET /memories/{memory_id}": {
+    "status": 404,
+    "detail": "Memory with ID __missing__ not found",
+    "contentType": "application/json"
+  },
+  "PATCH /memories/{memory_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /memory_topics": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /metrics": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /metrics/refresh": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /metrics/refresh/status": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /optimize-memories": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/latency": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/models": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /os/metrics/refresh": {
+    "status": 202,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/refresh/status": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/runs": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/sessions": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/tokens": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /os/metrics/users": {
+    "status": 503,
+    "detail": "User metrics not available: pass a `user_directory` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "DELETE /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "GET /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "PATCH /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "POST /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "PUT /queue": {
+    "status": 503,
+    "detail": "Queue not available: pass a `queue=QueueConfig(durable=True)` to AgentOS to enable this feature.",
+    "contentType": "application/json"
+  },
+  "GET /registry": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /schedules": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /schedules": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /schedules/{schedule_id}": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /schedules/{schedule_id}": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "PATCH /schedules/{schedule_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /schedules/{schedule_id}/disable": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "POST /schedules/{schedule_id}/enable": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /schedules/{schedule_id}/runs": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /schedules/{schedule_id}/runs/{run_id}": {
+    "status": 404,
+    "detail": "Schedule run not found",
+    "contentType": "application/json"
+  },
+  "POST /schedules/{schedule_id}/trigger": {
+    "status": 404,
+    "detail": "Schedule not found",
+    "contentType": "application/json"
+  },
+  "GET /service-accounts": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /service-accounts": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "DELETE /service-accounts/{service_account_id}": {
+    "status": 404,
+    "detail": "Service account '__missing__' not found",
+    "contentType": "application/json"
+  },
+  "DELETE /sessions": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /sessions": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /sessions": {
+    "status": 201,
+    "contentType": "application/json"
+  },
+  "DELETE /sessions/{session_id}": {
+    "status": 204,
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}": {
+    "status": 404,
+    "detail": "Session with id '__missing__' not found",
+    "contentType": "application/json"
+  },
+  "PATCH /sessions/{session_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/compactions": {
+    "status": 404,
+    "detail": "Session with ID __missing__ not found",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/media/{storage_key}": {
+    "status": 503,
+    "detail": "Media storage is not configured on AgentOS",
+    "contentType": "application/json"
+  },
+  "POST /sessions/{session_id}/rename": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/run-previews": {
+    "status": 404,
+    "detail": "Session with ID __missing__ not found",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/runs": {
+    "status": 404,
+    "detail": "Session with ID __missing__ not found",
+    "contentType": "application/json"
+  },
+  "GET /sessions/{session_id}/runs/{run_id}": {
+    "status": 404,
+    "detail": "Session with ID __missing__ not found",
+    "contentType": "application/json"
+  },
+  "GET /sessions/filter-schema": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /sessions/search": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /teams": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}": {
+    "status": 404,
+    "detail": "Team not found",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs/{run_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs/{run_id}/cancel": {
+    "status": 404,
+    "detail": "Team not found",
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs/{run_id}/checkpoints": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /teams/{team_id}/runs/{run_id}/checkpoints/{message_index}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs/{run_id}/continue": {
+    "status": 404,
+    "detail": "Team not found",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/runs/{run_id}/resume": {
+    "status": 404,
+    "detail": "Team not found",
+    "contentType": "application/json"
+  },
+  "POST /teams/{team_id}/sessions/{session_id}/fork": {
+    "status": 404,
+    "detail": "Team not found",
+    "contentType": "application/json"
+  },
+  "GET /trace_session_stats": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /traces": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /traces/{trace_id}": {
+    "status": 404,
+    "detail": "Trace not found",
+    "contentType": "application/json"
+  },
+  "GET /traces/filter-schema": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "POST /traces/search": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /user_memory_stats": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /workflows": {
+    "status": 200,
+    "contentType": "application/json"
+  },
+  "GET /workflows/{workflow_id}": {
+    "status": 404,
+    "detail": "Workflow not found",
+    "contentType": "application/json"
+  },
+  "GET /workflows/{workflow_id}/runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "GET /workflows/{workflow_id}/runs/{run_id}": {
+    "status": 422,
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs/{run_id}/cancel": {
+    "status": 404,
+    "detail": "Workflow not found",
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs/{run_id}/continue": {
+    "status": 404,
+    "detail": "Workflow not found",
+    "contentType": "application/json"
+  },
+  "POST /workflows/{workflow_id}/runs/{run_id}/resume": {
+    "status": 404,
+    "detail": "Workflow not found",
+    "contentType": "application/json"
+  }
+}

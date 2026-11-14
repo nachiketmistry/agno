@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "tasks": {
+    "build": { "dependsOn": ["^build"], "outputs": ["dist/**"] },
+    "typecheck": { "dependsOn": ["^typecheck"] },
+    "test": {
+      "dependsOn": ["^typecheck"],
+      "env": [
+        "AGENTWORKER_BASE_URL",
+        "AGENTWORKER_AUTH_BASE_URL",
+        "AGENTWORKER_KEYS_DIR",
+        "AGENTWORKER_COVERAGE_FILE"
+      ]
+    },
+    "test:unit": {},
+    "dev": { "cache": false, "persistent": true }
+  }
+}

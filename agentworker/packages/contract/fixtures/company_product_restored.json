@@ -1,0 +1,37 @@
+{
+  "body": {
+    "counts": {
+      "projects": 1,
+      "tasks": {
+        "backlog": 1,
+        "cancelled": 0,
+        "done": 0,
+        "in_progress": 0,
+        "in_review": 0,
+        "ready": 0
+      }
+    },
+    "created_at": 1794616672,
+    "deleted_at": null,
+    "id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249",
+    "metadata": {
+      "archive_window_days": 14,
+      "routine_ids": [
+        "99f01403-3d76-4b60-b213-c611fda1735c"
+      ]
+    },
+    "name": "SDK",
+    "purpose": "Ship the SDK",
+    "updated_at": 1794616672,
+    "user_id": null
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "POST",
+    "path": "/company/products/922fc3d5-a4ee-4d0a-a5f9-aadb013aa249/restore"
+  },
+  "status": 200
+}

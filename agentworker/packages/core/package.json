@@ -1,0 +1,9 @@
+{
+  "name": "@agentworker/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts", "./testing": "./src/testing.ts" },
+  "dependencies": { "@agentworker/contract": "workspace:*" },
+  "scripts": { "typecheck": "tsc -p tsconfig.json", "test": "bun test", "test:unit": "bun test" }
+}

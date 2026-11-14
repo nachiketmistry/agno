@@ -1,0 +1,13 @@
+{
+  "name": "@agentworker/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "typecheck": "tsc -p tsconfig.json", "test": "bun test", "test:unit": "bun test" },
+  "dependencies": {
+    "@agentworker/contract": "workspace:*",
+    "@agentworker/core": "workspace:*",
+    "hono": "^4.7.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "body": {
+    "created_at": 1794616672,
+    "cron_expr": "0 9 * * 1",
+    "deleted_at": null,
+    "description": null,
+    "disabled_reason": null,
+    "enabled": true,
+    "endpoint": "/agents/miniagent/runs",
+    "id": "99f01403-3d76-4b60-b213-c611fda1735c",
+    "last_run": null,
+    "managed_by": "company",
+    "max_retries": 0,
+    "method": "POST",
+    "name": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249.Weekly summary",
+    "next_run_at": 1794819600,
+    "payload": {
+      "message": "Operate only on Product \"922fc3d5-a4ee-4d0a-a5f9-aadb013aa249\".\n\nSummarize the week",
+      "metadata": {
+        "auto_accept": false,
+        "product_id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249",
+        "template": null
+      }
+    },
+    "retry_delay_seconds": 60,
+    "schedule_type": "scheduled",
+    "target_id": "miniagent",
+    "target_type": "agent",
+    "timeout_seconds": 3600,
+    "timezone": "UTC",
+    "updated_at": 1794616672,
+    "user_id": null
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "json": {
+      "cron_expr": "0 9 * * 1",
+      "instructions": "Summarize the week",
+      "name": "Weekly summary",
+      "product_id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249"
+    },
+    "method": "POST",
+    "path": "/company/routines"
+  },
+  "status": 201
+}

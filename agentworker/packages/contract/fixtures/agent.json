@@ -1,0 +1,35 @@
+{
+  "body": {
+    "db_id": "2b9d8484-a52f-52f2-a030-a076210333b2",
+    "description": "Reference agent",
+    "filesystem": false,
+    "id": "assistant",
+    "is_component": false,
+    "is_factory": false,
+    "model": {
+      "model": "gpt-5.6-luna",
+      "name": "OpenAIResponses",
+      "provider": "OpenAI"
+    },
+    "name": "Assistant",
+    "reasoning": {
+      "reasoning": false
+    },
+    "sandboxed": false,
+    "sessions": {
+      "session_table": "agno_sessions"
+    },
+    "system_message": {
+      "description": "Reference agent"
+    }
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/agents/assistant"
+  },
+  "status": 200
+}

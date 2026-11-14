@@ -1,0 +1,45 @@
+{
+  "body": {
+    "data": [
+      {
+        "counts": {
+          "projects": 0,
+          "tasks": {
+            "backlog": 0,
+            "cancelled": 0,
+            "done": 0,
+            "in_progress": 0,
+            "in_review": 0,
+            "ready": 0
+          }
+        },
+        "created_at": 1794616672,
+        "deleted_at": null,
+        "id": "922fc3d5-a4ee-4d0a-a5f9-aadb013aa249",
+        "metadata": {
+          "archive_window_days": 14
+        },
+        "name": "SDK",
+        "purpose": "Ship the SDK",
+        "updated_at": null,
+        "user_id": null
+      }
+    ],
+    "meta": {
+      "limit": 20,
+      "page": 1,
+      "search_time_ms": 0.0,
+      "total_count": 1,
+      "total_pages": 1
+    }
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/company/products"
+  },
+  "status": 200
+}

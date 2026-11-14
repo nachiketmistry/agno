@@ -1,0 +1,17 @@
+{
+  "body": {
+    "docs": "/docs",
+    "health": "/health",
+    "info": "/info",
+    "name": "Reference OS"
+  },
+  "headers": {
+    "content-type": "application/json",
+    "vary": "Origin"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/"
+  },
+  "status": 200
+}
